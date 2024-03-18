@@ -15,15 +15,20 @@ public class Vehicle {
         this.report = report;
     }
 
-    public void get_details(){
-        System.out.println("  Vehicle details  ");
-        System.out.println("-------------------");
-        System.out.println("Model               : "+ model);
-        System.out.println("Registration number : "+ registration_number);
-        System.out.println("Manufacture date    : "+ manufacture_date);
-        System.out.println("");
-        driver.get_details();
-        maintenance.get_details();
-        report.get_details();
+    // public void get_details(){
+    //     System.out.println("  Vehicle details  ");
+    //     System.out.println("-------------------");
+    //     System.out.println("Model               : "+ model);
+    //     System.out.println("Registration number : "+ registration_number);
+    //     System.out.println("Manufacture date    : "+ manufacture_date);
+    //     System.out.println("");
+    //     driver.get_details();
+    //     maintenance.get_details();
+    //     report.get_details();
+    // }
+
+    public String get_details(){
+        return "Model                     : "+ model + "\n"+ "Registration number : "+ registration_number + "\n"+ "Manufacture date     : "+ manufacture_date + "\n";
+       
     }
 }
