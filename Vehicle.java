@@ -28,7 +28,7 @@ public class Vehicle {
     // }
 
     public String get_details(){
-        return "Model                     : "+ model + "\n"+ "Registration number : "+ registration_number + "\n"+ "Manufacture date     : "+ manufacture_date + "\n";
+        return "Model                       : "+ model + "\n"+ "Registration number : "+ registration_number + "\n"+ "Manufacture date     : "+ manufacture_date + "\n";
        
     }
 }
