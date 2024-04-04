@@ -18,6 +18,9 @@ public class TransportManagementSystemGUI {
         mainframe.setDefaultCloseOperation(mainframe.EXIT_ON_CLOSE);
         GridLayout layout = new GridLayout(0, 2,3,5);
         mainframe.setLayout(layout);
+        
+        mainframe.add(new JLabel("  Transport Management System"));
+        mainframe.add(new Logo_Applet());
 
         // Driver fields
         mainframe.add(new JLabel("  Driver Name:"));
@@ -93,13 +96,6 @@ public class TransportManagementSystemGUI {
             }
         });
         mainframe.add(displayButton);
-
-        // Display Area
-        displayArea = new JTextArea();
-        displayArea.setPreferredSize(new Dimension(200,200));
-        JScrollPane scrollPane = new JScrollPane(displayArea);
-        scrollPane.setPreferredSize(new Dimension(200,200));
-
         mainframe.setVisible(true);
     }
 
@@ -155,7 +151,7 @@ public class TransportManagementSystemGUI {
 
     public void display_data() {
         JFrame top_level = new JFrame("Vehicle details");
-        top_level.setSize(400,500);
+        top_level.setSize(400,450);
 
         // Display Area
         displayArea = new JTextArea();
@@ -187,6 +183,6 @@ public class TransportManagementSystemGUI {
     }
 
     public static void main(String[] args) {
-        new TransportManagementSystemGUI();
+
     }
 }

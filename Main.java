@@ -37,21 +37,7 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Vehicle[] vehicles = new Vehicle[50];
-        int count = 0;
-
-        Driver driver = new Driver("Victor Wanyama", 32, "Male", 5);
-        Maintenance maintenance = new Maintenance("01/01/2022", "Oil change", "10/01/2023");
-        Report report = new Report("01/01/2022", "The vehicle is well maintained and has been driven for 32000KM");
-
-        count = add_vehicle(vehicles,count,"ISUZU","KDA","01/01/2017",driver,maintenance,report);
-
-
-        Driver driver2 = new Driver("Brian Wamalwa", 28, "Male", 2);
-        Maintenance maintenance2 = new Maintenance("01/07/2022", "Tyre change", "10/07/2023");
-        Report report2 = new Report("01/07/2022", "The vehicle is well maintained and has been driven for 2000KM");
-        count = add_vehicle(vehicles,count,"Scania","KDE","01/07/2020",driver2,maintenance2,report2);
-        get_all_vehicles_and_their_details(vehicles);
+        new TransportManagementSystemGUI();
         
     }
 
